@@ -13,7 +13,7 @@ const Demos: React.FC = () => {
     setSelectedVideo(videoSrc);
   };
   return (
-    <div className="demos min-h-screen bg-red-500 flex justify-center items-center">
+    <div className="demos min-h-screen bg-transparent flex justify-center items-center">
       <div className="text-white flex flex-col gap-10 justify-center items-center max-w-4xl px-4">
         <div className="buttons text-white flex sm:flex-row flex-wrap gap-4 py-4 px-3 font-Jost font-bold w-full justify-center items-center">
           <button

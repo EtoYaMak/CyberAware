@@ -148,7 +148,7 @@ const QuizComp: React.FunctionComponent = () => {
             {currentIndex === shuffledQuestions.length - 1 ? (
               <button
                 onClick={handleSubmit}
-                className="text-white bg-emerald-600  font-Jost text-xl font-medium   hover:bg-green-600 hover:text-white hover:scale-[103%] ease-in-out duration-100"
+                className="text-white bg-emerald-600  font-Jost text-xl font-semibold h-fit px-[1.794rem] py-2  hover:bg-green-600 hover:text-white hover:scale-[103%] ease-in-out duration-100"
               >
                 Submit
               </button>

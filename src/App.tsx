@@ -102,7 +102,9 @@ const App: React.FC = () => {
           <Quiz />
         </ParallaxLayer>
       </Parallax>
-      <Foot />
+      <footer className="absolute bottom-0 w-full text-center">
+        <Foot />
+      </footer>
     </div>
   );
 };

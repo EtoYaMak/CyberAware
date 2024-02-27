@@ -7,7 +7,7 @@ import { FaPersonShelter } from "react-icons/fa6";
 
 const Protection: React.FC = () => {
   return (
-    <div className="protection min-h-screen  bg-blue-600 flex justify-center items-center">
+    <div className="protection min-h-screen  bg-transparent flex justify-center items-center">
       <div className="text-white flex flex-col gap-10 justify-center items-center max-w-4xl px-4">
         <h1 className="text-white text-3xl sm:text-4xl font-Jost font-semibold tracking-widest w-full text-center">
           Prevention & Protection
