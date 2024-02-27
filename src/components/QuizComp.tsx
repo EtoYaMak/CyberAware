@@ -21,7 +21,7 @@ const QuizComp: React.FunctionComponent = () => {
   >(new Array(Object.keys(QuizQuestions).length).fill(null));
   const [showResult, setShowResult] = useState(false);
   const [score, setScore] = useState(0);
-  const [shuffleCounter, setShuffleCounter] = useState(0);
+  const [shuffleCounter] = useState(0);
 
   const [shuffledQuestions, setShuffledQuestions] = useState<Question[]>([]);
 
