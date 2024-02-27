@@ -1,0 +1,56 @@
+[
+  {
+    "question": "In a workplace, who is responsible for cybersecurity?",
+    "answers": {
+      "a": "Everyone",
+      "b": "IT department",
+      "c": "Chief Executive"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "A good defense against ransomware is to?",
+    "answers": {
+      "a": "Cybersecurity insurance",
+      "b": "Keep devices and software up to date",
+      "c": "Backup data regularly"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "How should you proceed if you don't recognize an email contact",
+    "answers": {
+      "a": "Report it",
+      "b": "Open the email and its contents",
+      "c": "Ignore the email"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "How safe is it to reuse a password?",
+    "answers": {
+      "a": "No risk in using the same password",
+      "b": "Never.",
+      "c": "When its too hard to remember a different password"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "If you suspect your system is breached you...?",
+    "answers": {
+      "a": "Try to fix it on your own",
+      "b": "Ignore it and hope it goes away",
+      "c": "Contact the network admins"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "Best methods to maintain privacy?",
+    "answers": {
+      "a": "End-to-end encryption",
+      "b": "Strong passwords and Multi-factor authentication",
+      "c": "Anti-virus and anti-malware software"
+    },
+    "correctAnswer": "a"
+  }
+]

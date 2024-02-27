@@ -1,0 +1,40 @@
+.animation,
+.animation_layer {
+  height: 1000px;
+}
+
+.animation {
+  display: block;
+  position: relative;
+  z-index: 10;
+}
+
+.animation_layer {
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+}
+.animation_layer {
+  position: fixed;
+}
+
+#left {
+  background-image: url("./assets/left-side-parallax-city.png");
+}
+#right {
+  background-image: url("./assets/right-side-parallax.png");
+}
+#middle {
+  background-image: url("./assets/middle-parallax.png");
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+#icon {
+  animation: spinner 4.2s ease infinite;
+}
