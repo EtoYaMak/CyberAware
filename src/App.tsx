@@ -1,6 +1,6 @@
 import "./App.css";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Demos from "./pages/Demos";
 import Threats from "./pages/Threats";
 import Quiz from "./pages/Quiz";
@@ -105,6 +105,7 @@ const App: React.FC = () => {
       <footer className="absolute bottom-0 w-full text-center">
         <Foot />
       </footer>
+      <SpeedInsights />
     </div>
   );
 };
