@@ -1,0 +1,27 @@
+Instructions for creating video thumbnails:
+
+1. You can extract a frame from each video file to create thumbnails using the following methods:
+
+For Windows (using FFmpeg):
+```
+ffmpeg -i /assets/dos_demo.mp4 -ss 00:00:02 -vframes 1 /assets/thumbnails/dos-thumbnail.jpg
+ffmpeg -i /assets/phish_demo.mp4 -ss 00:00:02 -vframes 1 /assets/thumbnails/phishing-thumbnail.jpg
+ffmpeg -i /assets/mal_demo.mp4 -ss 00:00:02 -vframes 1 /assets/thumbnails/malware-thumbnail.jpg
+```
+
+For Mac/Linux (using FFmpeg):
+```
+ffmpeg -i ./public/assets/dos_demo.mp4 -ss 00:00:02 -vframes 1 ./public/assets/thumbnails/dos-thumbnail.jpg
+ffmpeg -i ./public/assets/phish_demo.mp4 -ss 00:00:02 -vframes 1 ./public/assets/thumbnails/phishing-thumbnail.jpg
+ffmpeg -i ./public/assets/mal_demo.mp4 -ss 00:00:02 -vframes 1 ./public/assets/thumbnails/malware-thumbnail.jpg
+```
+
+2. Alternatively, you can manually take screenshots from each video at appropriate moments and save them as:
+   - dos-thumbnail.jpg
+   - phishing-thumbnail.jpg
+   - malware-thumbnail.jpg
+
+3. Place these files in the /public/assets/thumbnails/ directory.
+
+Note: If you're using placeholder thumbnails for now, create simple colored rectangles with text
+describing the video topic until you can extract actual video frames. 

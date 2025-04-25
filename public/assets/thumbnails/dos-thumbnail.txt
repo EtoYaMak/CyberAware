@@ -1,0 +1,2 @@
+This is a placeholder for the DOS thumbnail image.
+Create a 1280x720 image with a yellow gradient background and the text "Denial of Service Attack". 

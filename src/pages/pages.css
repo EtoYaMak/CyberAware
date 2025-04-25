@@ -93,40 +93,67 @@
   padding: 1rem 0;
 }
 
-.buttons-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  margin-bottom: 2.5rem;
+.category-card-container {
+  margin-bottom: 2rem;
 }
 
-.demo-button {
-  padding: 0.75rem 1.5rem;
-  font-weight: bold;
-  border-radius: 0.25rem;
-  min-width: 10rem;
+.category-card {
+  backdrop-filter: blur(10px);
   transition: all 0.3s ease;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  font-family: "Jost", sans-serif;
 }
 
-.video-container {
+.video-section {
+  position: relative;
+}
+
+.video-wrapper {
   width: 100%;
-  aspect-ratio: 16/9;
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 0.5rem;
+}
+
+.media-player-container {
+  margin-bottom: 1.5rem;
+}
+
+/* Video player custom styling */
+.media-player-container :global(.vidstack--video) {
+  --video-border-radius: 0.75rem;
+  border-radius: 0.75rem;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
-.video-container video {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+.video-description {
+  backdrop-filter: blur(10px);
+}
+
+/* Custom scrollbar for the video description */
+.video-description {
+  max-height: 300px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
+
+.video-description::-webkit-scrollbar {
+  width: 8px;
+}
+
+.video-description::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.video-description::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+/* Buttons are handled by the category cards now */
+.buttons-container {
+  display: none;
+}
+
+/* Video container is now handled by the VideoPlayer component */
+.video-container {
+  display: none;
 }
 
 /* Quiz page */
@@ -177,5 +204,13 @@
 
   .quiz-container {
     padding: 1rem 0;
+  }
+
+  .category-card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .video-description {
+    max-height: none;
   }
 }

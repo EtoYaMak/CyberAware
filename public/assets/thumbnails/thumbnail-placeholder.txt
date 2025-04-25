@@ -1,0 +1,5 @@
+This is a placeholder file for the thumbnails directory.
+The actual thumbnail images will be added as:
+- dos-thumbnail.jpg
+- phishing-thumbnail.jpg
+- malware-thumbnail.jpg 

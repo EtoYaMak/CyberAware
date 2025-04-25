@@ -160,17 +160,6 @@ const QuizComp: React.FunctionComponent = () => {
     }
   };
 
-  const handlePreviousQuestion = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-    }
-  };
-
-  const handleNextQuestion = () => {
-    if (currentIndex < shuffledQuestions.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-    }
-  };
 
   const handleRestartQuiz = () => {
     setCurrentIndex(0);

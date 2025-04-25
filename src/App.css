@@ -51,7 +51,6 @@
   align-items: center;
   justify-content: center;
   padding: 6rem 1rem;
-  cursor: pointer;
 }
 
 .section-content {
@@ -113,4 +112,68 @@
 }
 #middle {
   background-image: url("./assets/middle-parallax.png");
+}
+
+/* Make sure interactive sections can be properly interacted with */
+.interactive-content {
+  pointer-events: auto !important;
+}
+
+.interactive-content * {
+  pointer-events: auto !important;
+}
+
+/* Style the navigation dots */
+.sidenav button {
+  transition: all 0.2s ease;
+}
+
+.sidenav button:hover {
+  transform: scale(1.5);
+}
+
+/* New enhanced navigation styles */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+.sidenav {
+  transition: all 0.3s ease;
+}
+
+.sidenav:hover {
+  transform: translateY(-50%) translateX(-5px) scale(1.05);
+}
+
+.sidenav button {
+  animation: pulse 2s infinite;
+  animation-delay: calc(var(--btn-index, 0) * 0.5s);
+}
+
+.sidenav button:nth-child(1) {
+  --btn-index: 0;
+}
+
+.sidenav button:nth-child(2) {
+  --btn-index: 1;
+}
+
+.sidenav button:nth-child(3) {
+  --btn-index: 2;
+}
+
+.sidenav button:nth-child(4) {
+  --btn-index: 3;
+}
+
+.sidenav button:nth-child(5) {
+  --btn-index: 4;
 }

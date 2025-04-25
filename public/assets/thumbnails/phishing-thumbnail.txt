@@ -1,0 +1,2 @@
+This is a placeholder for the phishing thumbnail image.
+Create a 1280x720 image with a blue gradient background and the text "Phishing Tactics". 
