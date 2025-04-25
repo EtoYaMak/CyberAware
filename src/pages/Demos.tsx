@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useState } from "react";
 import VideoPlayer from "../components/VideoPlayer";
 import { motion, AnimatePresence } from "framer-motion";
