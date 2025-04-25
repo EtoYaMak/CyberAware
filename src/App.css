@@ -1,6 +1,14 @@
+/* Global resets and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Animation layer styles */
 .animation,
 .animation_layer {
-  height: 1000px;
+  height: 100vh;
 }
 
 .animation {
@@ -16,8 +24,85 @@
   width: 100%;
   position: absolute;
 }
-.animation_layer {
+
+/* Home section (landing page) */
+.home {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-content {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+/* Content section styles */
+.section-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 1rem;
+  cursor: pointer;
+}
+
+.section-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Animation for reload icon */
+@keyframes spinner {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+#icon {
+  animation: spinner 4.2s ease infinite;
+}
+
+/* Footer positioning */
+.footer {
   position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  padding: 0.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Helper class to prevent content overflow */
+.prevent-overflow {
+  overflow: hidden;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section-wrapper {
+    padding: 4rem 1rem;
+  }
+
+  .section-content {
+    padding: 2rem 1rem;
+  }
 }
 
 #left {
@@ -28,13 +113,4 @@
 }
 #middle {
   background-image: url("./assets/middle-parallax.png");
-}
-
-@keyframes spinner {
-  to {
-    transform: rotate(-360deg);
-  }
-}
-#icon {
-  animation: spinner 4.2s ease infinite;
 }
