@@ -1,3 +1,4 @@
+/* eslint-disable */
 import "./App.css";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Demos from "./pages/Demos";
